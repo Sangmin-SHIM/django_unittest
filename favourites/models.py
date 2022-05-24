@@ -11,4 +11,4 @@ class FavouriteProduct(DateMixin):
     is_favourite = models.BooleanField(default=True)
 
     def __str__(self):
-        return 'product {} {} by {}'.format(self.product.name, 'marked favourite', self.user.get_full_name())
+        return 'product {} by {}'.format(self.product.name, self.user.get_full_name())
